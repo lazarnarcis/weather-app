@@ -7,7 +7,7 @@ button.addEventListener("click", function() {
     let locName = document.querySelector("#locationName");
     let cityName = locName.value;
     let limit = 5;
-    let apiKey = "0e2d7c2584681350f5a2196d5ce16595";
+    let apiKey = "ec422617e09e98f3e305edf89e599ffc";
     let api = "http://api.openweathermap.org/geo/1.0/direct?q=" + cityName + "&limit=" + limit + "&appid=" + apiKey;
     fetch(api).then(res => res.json()).then(res => {
         console.log(res);
